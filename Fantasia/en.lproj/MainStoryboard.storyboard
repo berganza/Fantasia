@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="O6D-7W-dqy">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="FondoMar.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="f95-HA-fHK"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Cofre1.png" translatesAutoresizingMaskIntoConstraints="NO" id="uUF-HV-l5u">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="4B0-43-D95"/>
+                                    <constraint firstAttribute="height" constant="117" id="o8O-vx-ZpM"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQh-ab-hbg">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="8Ev-x6-rYc"/>
+                                    <constraint firstAttribute="width" constant="108" id="iwW-rp-lth"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="abrirCofre:" destination="2" eventType="touchUpInside" id="aGl-RI-bH4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Buceador1.png" translatesAutoresizingMaskIntoConstraints="NO" id="CT0-SC-cnX">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="QkW-yt-yfU"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oai-y6-dM1">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="AkY-lo-FbC"/>
+                                    <constraint firstAttribute="width" constant="190" id="ipJ-RK-cGf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="animarBuceador:" destination="2" eventType="touchUpInside" id="yge-FF-An1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqk-qW-HWi">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="6bn-m5-873"/>
+                                    <constraint firstAttribute="height" constant="59" id="imc-FI-9Mx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopBuceador:" destination="2" eventType="touchUpInside" id="f2x-0a-Flg"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Pez1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jc5-6M-rDt">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="fDa-hT-1Rh"/>
+                                    <constraint firstAttribute="width" constant="97" id="pAl-xj-HbZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="uUF-HV-l5u" secondAttribute="bottom" constant="12" id="1RP-iZ-e6R"/>
+                            <constraint firstItem="f95-HA-fHK" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="3m6-cq-bld"/>
+                            <constraint firstItem="Pqk-qW-HWi" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="BWB-92-MHV"/>
+                            <constraint firstItem="f95-HA-fHK" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="E8k-dI-44j"/>
+                            <constraint firstItem="oai-y6-dM1" firstAttribute="centerX" secondItem="CT0-SC-cnX" secondAttribute="centerX" type="default" id="MRh-B6-LlA"/>
+                            <constraint firstItem="Jc5-6M-rDt" firstAttribute="top" secondItem="3" secondAttribute="top" constant="119" id="NA9-tG-JOZ"/>
+                            <constraint firstItem="f95-HA-fHK" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="P2v-1u-9nS"/>
+                            <constraint firstAttribute="bottom" secondItem="oai-y6-dM1" secondAttribute="bottom" constant="35" id="RWf-Pm-Wbq"/>
+                            <constraint firstItem="Jc5-6M-rDt" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="90" id="Rfh-4q-GXK"/>
+                            <constraint firstItem="oai-y6-dM1" firstAttribute="top" secondItem="CT0-SC-cnX" secondAttribute="top" type="default" id="XT8-Nu-24g"/>
+                            <constraint firstItem="CT0-SC-cnX" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="bXu-0e-9vz"/>
+                            <constraint firstItem="oai-y6-dM1" firstAttribute="bottom" secondItem="CT0-SC-cnX" secondAttribute="bottom" type="default" id="g2A-Es-dcM"/>
+                            <constraint firstItem="xQh-ab-hbg" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="142" id="i8l-h9-YYZ"/>
+                            <constraint firstAttribute="bottom" secondItem="xQh-ab-hbg" secondAttribute="bottom" constant="17" id="lWZ-aq-BYc"/>
+                            <constraint firstItem="Pqk-qW-HWi" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ncs-CS-lsK"/>
+                            <constraint firstItem="uUF-HV-l5u" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="110" id="xko-id-q9G"/>
+                            <constraint firstItem="f95-HA-fHK" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="y1X-ih-hIY"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3FF-V3-Ne0"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="buceador" destination="CT0-SC-cnX" id="Rzn-vf-DOd"/>
+                        <outlet property="cofre" destination="uUF-HV-l5u" id="1bB-Mh-9uC"/>
+                        <outlet property="pez" destination="Jc5-6M-rDt" id="WmC-83-UgZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1107" y="-99"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1Mr-Md-9jF">
+            <objects>
+                <viewController id="fnz-x5-LM1" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ft1-1w-ZuW">
+                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="campo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hnx-Na-0IQ"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Unicornio1.png" translatesAutoresizingMaskIntoConstraints="NO" id="hxw-gL-Ke6">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="Spq-go-Viy"/>
+                                    <constraint firstAttribute="width" constant="135" id="UxJ-Zm-sJm"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lu5-tu-TAD">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="QBY-HN-QKC"/>
+                                    <constraint firstAttribute="width" constant="121" id="RZ5-1Y-pw2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="animarUnicornio:" destination="fnz-x5-LM1" eventType="touchUpInside" id="vKt-rh-jlm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hnx-Na-0IQ" firstAttribute="top" secondItem="ft1-1w-ZuW" secondAttribute="top" type="default" id="DSq-OI-o29"/>
+                            <constraint firstItem="hnx-Na-0IQ" firstAttribute="leading" secondItem="ft1-1w-ZuW" secondAttribute="leading" type="default" id="HyN-op-PXN"/>
+                            <constraint firstAttribute="trailing" secondItem="lu5-tu-TAD" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="OaT-qC-afp"/>
+                            <constraint firstItem="hxw-gL-Ke6" firstAttribute="bottom" secondItem="ft1-1w-ZuW" secondAttribute="bottom" type="default" id="UmT-VU-VL0"/>
+                            <constraint firstAttribute="bottom" secondItem="lu5-tu-TAD" secondAttribute="bottom" constant="4" id="bgS-hZ-7q7"/>
+                            <constraint firstItem="hnx-Na-0IQ" firstAttribute="trailing" secondItem="ft1-1w-ZuW" secondAttribute="trailing" type="default" id="dN1-4Y-1hJ"/>
+                            <constraint firstItem="hnx-Na-0IQ" firstAttribute="bottom" secondItem="ft1-1w-ZuW" secondAttribute="bottom" type="default" id="kE8-9o-UYX"/>
+                            <constraint firstItem="hxw-gL-Ke6" firstAttribute="trailing" secondItem="ft1-1w-ZuW" secondAttribute="trailing" type="default" id="z4V-jx-Tlm"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="unicornio" destination="hxw-gL-Ke6" id="sjH-DY-erj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cOh-rc-Gek" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1107" y="380"/>
+        </scene>
+        <!--View Controller - Animaciones-->
+        <scene sceneID="Bcc-yw-dk7">
+            <objects>
+                <viewController id="f8A-W2-lue" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gdb-19-lcE">
+                        <rect key="frame" x="0.0" y="64" width="480" height="256"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="solniño.png" translatesAutoresizingMaskIntoConstraints="NO" id="zPw-cz-puz"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Lf-Xz-5xG">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="isn-RY-6mx"/>
+                                    <constraint firstAttribute="width" constant="137" id="qtH-US-ywd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                <state key="normal" title="Mundo submarino" image="Buceador1.png">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2" kind="modal" modalTransitionStyle="partialCurl" id="ISj-KN-on3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4d5-Ja-6tS">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="b0w-K1-1yC"/>
+                                    <constraint firstAttribute="height" constant="100" id="fnl-Yi-FCd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                <state key="normal" title="Unicornio" image="Unicornio1.png">
+                                    <color key="titleColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fnz-x5-LM1" kind="modal" modalTransitionStyle="partialCurl" id="irt-pm-2iT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UH4-mY-D1x">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="SxV-tp-qey"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                <state key="normal" title="Casa" image="Telefono1.png">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="REg-AL-isS" kind="modal" modalTransitionStyle="partialCurl" id="vwa-hf-8io"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Había una vez un" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="tg2-7X-gkZ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="S7R-yX-Vwo"/>
+                                    <constraint firstAttribute="width" constant="280" id="Wab-QY-nlv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mundo Mágico..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="5y4-cE-6Jc">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="BOf-uk-G2P"/>
+                                    <constraint firstAttribute="height" constant="55" id="MZ1-e1-vrU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Lf-Xz-5xG" firstAttribute="leading" secondItem="gdb-19-lcE" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="2Ya-gW-7BF"/>
+                            <constraint firstItem="5y4-cE-6Jc" firstAttribute="leading" secondItem="gdb-19-lcE" secondAttribute="leading" constant="187" id="3vD-C3-6HX"/>
+                            <constraint firstAttribute="bottom" secondItem="5y4-cE-6Jc" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="5gr-DI-mpo"/>
+                            <constraint firstItem="zPw-cz-puz" firstAttribute="top" secondItem="gdb-19-lcE" secondAttribute="top" type="default" id="Aub-xv-97l"/>
+                            <constraint firstItem="tg2-7X-gkZ" firstAttribute="top" secondItem="gdb-19-lcE" secondAttribute="top" constant="20" symbolic="YES" type="default" id="OHb-ef-U5L"/>
+                            <constraint firstItem="6Lf-Xz-5xG" firstAttribute="top" secondItem="gdb-19-lcE" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Oyc-WT-Vv6"/>
+                            <constraint firstItem="4d5-Ja-6tS" firstAttribute="centerY" secondItem="zPw-cz-puz" secondAttribute="centerY" type="default" id="VNh-Z6-kdT"/>
+                            <constraint firstItem="zPw-cz-puz" firstAttribute="bottom" secondItem="gdb-19-lcE" secondAttribute="bottom" type="default" id="XRg-0K-hsE"/>
+                            <constraint firstAttribute="bottom" secondItem="UH4-mY-D1x" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Za0-83-vqb"/>
+                            <constraint firstItem="4d5-Ja-6tS" firstAttribute="centerX" secondItem="6Lf-Xz-5xG" secondAttribute="centerX" type="default" id="cVq-ph-RZ8"/>
+                            <constraint firstItem="zPw-cz-puz" firstAttribute="trailing" secondItem="gdb-19-lcE" secondAttribute="trailing" type="default" id="eVr-aG-xk7"/>
+                            <constraint firstItem="zPw-cz-puz" firstAttribute="leading" secondItem="gdb-19-lcE" secondAttribute="leading" type="default" id="f2c-Wz-Bau"/>
+                            <constraint firstAttribute="trailing" secondItem="tg2-7X-gkZ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="gO8-Oo-p4i"/>
+                            <constraint firstItem="UH4-mY-D1x" firstAttribute="leading" secondItem="gdb-19-lcE" secondAttribute="leading" constant="43" id="iB8-dE-wlq"/>
+                            <constraint firstItem="5y4-cE-6Jc" firstAttribute="centerY" secondItem="UH4-mY-D1x" secondAttribute="centerY" type="default" id="mSk-FT-0Db"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Animaciones" id="bt9-51-1Gs"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xkg-ct-LTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="406" y="380"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uSP-ud-BVA">
+            <objects>
+                <viewController id="REg-AL-isS" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PGq-Ob-6Ew">
+                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Salon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CnK-e8-Rx3"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Telefono1.png" translatesAutoresizingMaskIntoConstraints="NO" id="CvW-cC-DTW">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="IlH-xJ-e3h"/>
+                                    <constraint firstAttribute="width" constant="82" id="rXz-PU-cbC"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyQ-ZB-I2G">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="XXb-AQ-sUO"/>
+                                    <constraint firstAttribute="width" constant="73" id="peV-8p-vuJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="animarTelefono:" destination="REg-AL-isS" eventType="touchUpInside" id="9FM-0X-qIa"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Reloj1.png" translatesAutoresizingMaskIntoConstraints="NO" id="89z-qw-R0e">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="4TZ-jj-0lc"/>
+                                    <constraint firstAttribute="height" constant="51" id="bfl-wA-ffk"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keF-Y4-yaJ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="gRs-o2-b0m"/>
+                                    <constraint firstAttribute="width" constant="73" id="nvl-mc-U2K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="animarReloj:" destination="REg-AL-isS" eventType="touchUpInside" id="yYs-KY-WND"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CnK-e8-Rx3" firstAttribute="trailing" secondItem="PGq-Ob-6Ew" secondAttribute="trailing" type="default" id="05I-1q-sww"/>
+                            <constraint firstItem="dyQ-ZB-I2G" firstAttribute="bottom" secondItem="CvW-cC-DTW" secondAttribute="bottom" type="default" id="51f-DB-R0I"/>
+                            <constraint firstItem="CnK-e8-Rx3" firstAttribute="bottom" secondItem="PGq-Ob-6Ew" secondAttribute="bottom" type="default" id="CcA-zi-QrH"/>
+                            <constraint firstItem="CnK-e8-Rx3" firstAttribute="leading" secondItem="PGq-Ob-6Ew" secondAttribute="leading" type="default" id="EDJ-Pp-0IT"/>
+                            <constraint firstAttribute="bottom" secondItem="CvW-cC-DTW" secondAttribute="bottom" constant="56" id="Jhl-TW-5Oq"/>
+                            <constraint firstItem="dyQ-ZB-I2G" firstAttribute="centerX" secondItem="CvW-cC-DTW" secondAttribute="centerX" type="default" id="NSO-PZ-S9F"/>
+                            <constraint firstItem="keF-Y4-yaJ" firstAttribute="centerX" secondItem="89z-qw-R0e" secondAttribute="centerX" type="default" id="S2e-mj-xw0"/>
+                            <constraint firstItem="CnK-e8-Rx3" firstAttribute="top" secondItem="PGq-Ob-6Ew" secondAttribute="top" type="default" id="bZ0-2y-Hf5"/>
+                            <constraint firstItem="keF-Y4-yaJ" firstAttribute="bottom" secondItem="89z-qw-R0e" secondAttribute="bottom" type="default" id="cfK-Nz-RF8"/>
+                            <constraint firstItem="keF-Y4-yaJ" firstAttribute="top" secondItem="PGq-Ob-6Ew" secondAttribute="top" constant="25" id="eop-AP-ikO"/>
+                            <constraint firstItem="CvW-cC-DTW" firstAttribute="leading" secondItem="PGq-Ob-6Ew" secondAttribute="leading" constant="195" id="g5l-U1-HxQ"/>
+                            <constraint firstItem="keF-Y4-yaJ" firstAttribute="leading" secondItem="PGq-Ob-6Ew" secondAttribute="leading" constant="63" id="rpB-os-Qjt"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="reloj" destination="89z-qw-R0e" id="OAq-fU-jaJ"/>
+                        <outlet property="telefono" destination="CvW-cC-DTW" id="VX6-7z-iYY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRb-Af-Vam" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1107" y="860"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fZ0-J6-bCA">
+            <objects>
+                <navigationController id="O6D-7W-dqy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uet-SA-kVl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="f8A-W2-lue" kind="relationship" relationship="rootViewController" id="OcS-2o-fDV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TjO-9v-GnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130" y="300"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Buceador1.png" width="150" height="46"/>
+        <image name="Cofre1.png" width="152" height="125"/>
+        <image name="FondoMar.jpeg" width="960" height="726"/>
+        <image name="Pez1.png" width="70" height="50"/>
+        <image name="Reloj1.png" width="75" height="75"/>
+        <image name="Salon.jpg" width="800" height="850"/>
+        <image name="Telefono1.png" width="70" height="71"/>
+        <image name="Unicornio1.png" width="200" height="178"/>
+        <image name="campo.jpg" width="1440" height="1080"/>
+        <image name="solniño.png" width="268" height="200"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

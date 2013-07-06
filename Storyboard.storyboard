@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="P6S-2z-eyF">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="hEc-ll-OR9">
+            <objects>
+                <viewController id="NY9-I4-92D" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cGq-57-VJO">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="imagenIpad.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ks7-Kx-f0l"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="583-Je-jdo">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="331" id="5X7-8E-ncj"/>
+                                    <constraint firstAttribute="height" constant="130" id="i8H-zH-fKP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="30"/>
+                                <state key="normal" title="Cosas de Casa" image="Telefono1.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbE-hn-xFo">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="176" id="8V8-Nl-opE"/>
+                                    <constraint firstAttribute="width" constant="526" id="bWe-aK-zcQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="30"/>
+                                <state key="normal" title="Unicornio" image="Unicornio1.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soW-bW-77Q">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="NJa-FR-gQW"/>
+                                    <constraint firstAttribute="width" constant="434" id="RzY-cF-E8a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Mundo Submarino" image="Buceador1.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Gof-2T-sZb" kind="modal" modalTransitionStyle="partialCurl" id="YwJ-oh-qsV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FbE-hn-xFo" firstAttribute="top" secondItem="cGq-57-VJO" secondAttribute="top" constant="170" id="6R7-61-k5N"/>
+                            <constraint firstItem="FbE-hn-xFo" firstAttribute="centerX" secondItem="Ks7-Kx-f0l" secondAttribute="centerX" type="default" id="6oE-dh-TKo"/>
+                            <constraint firstItem="soW-bW-77Q" firstAttribute="top" secondItem="cGq-57-VJO" secondAttribute="top" constant="20" symbolic="YES" type="default" id="ES3-m1-CQy"/>
+                            <constraint firstItem="Ks7-Kx-f0l" firstAttribute="trailing" secondItem="cGq-57-VJO" secondAttribute="trailing" type="default" id="FM0-mu-mY3"/>
+                            <constraint firstItem="Ks7-Kx-f0l" firstAttribute="bottom" secondItem="cGq-57-VJO" secondAttribute="bottom" type="default" id="JK5-EF-Y1V"/>
+                            <constraint firstItem="583-Je-jdo" firstAttribute="top" secondItem="cGq-57-VJO" secondAttribute="top" constant="20" symbolic="YES" type="default" id="RbT-mw-HQL"/>
+                            <constraint firstItem="Ks7-Kx-f0l" firstAttribute="top" secondItem="cGq-57-VJO" secondAttribute="top" type="default" id="SUf-ZL-ksg"/>
+                            <constraint firstItem="Ks7-Kx-f0l" firstAttribute="leading" secondItem="cGq-57-VJO" secondAttribute="leading" type="default" id="ffk-4O-U52"/>
+                            <constraint firstItem="583-Je-jdo" firstAttribute="baseline" secondItem="soW-bW-77Q" secondAttribute="baseline" type="default" id="loc-zc-IK0"/>
+                            <constraint firstItem="583-Je-jdo" firstAttribute="baseline" secondItem="FbE-hn-xFo" secondAttribute="baseline" type="default" id="nZd-UO-t4f"/>
+                            <constraint firstAttribute="trailing" secondItem="583-Je-jdo" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="x8v-li-k7j"/>
+                            <constraint firstItem="soW-bW-77Q" firstAttribute="leading" secondItem="cGq-57-VJO" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="zpJ-SJ-3Ca"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HD0-5E-TzW"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ajr-MW-JGx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-102" y="-42"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KTs-ln-U2b">
+            <objects>
+                <viewController id="Gof-2T-sZb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9BX-7g-T6b">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="FondoMar.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="gFl-5d-bIZ"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Pez1.png" translatesAutoresizingMaskIntoConstraints="NO" id="RtT-SX-KTK">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Nhd-dc-j2B"/>
+                                    <constraint firstAttribute="width" constant="97" id="Pdu-PI-OvV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Cofre1.png" translatesAutoresizingMaskIntoConstraints="NO" id="hyj-Ke-DCY">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="W4z-FI-8uI"/>
+                                    <constraint firstAttribute="height" constant="117" id="mL0-t1-brN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYx-ki-b7z">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="A1V-cx-vJC"/>
+                                    <constraint firstAttribute="width" constant="176" id="iFT-JA-OIU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" image="Buceador1.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gFl-5d-bIZ" firstAttribute="top" secondItem="9BX-7g-T6b" secondAttribute="top" type="default" id="GCc-0G-biG"/>
+                            <constraint firstAttribute="trailing" secondItem="TYx-ki-b7z" secondAttribute="trailing" constant="28" id="KgO-MS-6jh"/>
+                            <constraint firstItem="hyj-Ke-DCY" firstAttribute="leading" secondItem="9BX-7g-T6b" secondAttribute="leading" constant="350" id="RfD-Z5-EKg"/>
+                            <constraint firstItem="gFl-5d-bIZ" firstAttribute="trailing" secondItem="9BX-7g-T6b" secondAttribute="trailing" type="default" id="RtH-mF-t4S"/>
+                            <constraint firstAttribute="bottom" secondItem="hyj-Ke-DCY" secondAttribute="bottom" constant="39" id="fTN-If-21p"/>
+                            <constraint firstAttribute="bottom" secondItem="RtT-SX-KTK" secondAttribute="bottom" constant="200" id="ing-Cv-ich"/>
+                            <constraint firstItem="TYx-ki-b7z" firstAttribute="top" secondItem="9BX-7g-T6b" secondAttribute="top" constant="108" id="ohr-j2-eC8"/>
+                            <constraint firstItem="gFl-5d-bIZ" firstAttribute="bottom" secondItem="9BX-7g-T6b" secondAttribute="bottom" type="default" id="rhk-0S-WQ0"/>
+                            <constraint firstItem="RtT-SX-KTK" firstAttribute="leading" secondItem="9BX-7g-T6b" secondAttribute="leading" constant="143" id="wzP-C7-fxJ"/>
+                            <constraint firstItem="gFl-5d-bIZ" firstAttribute="leading" secondItem="9BX-7g-T6b" secondAttribute="leading" type="default" id="yrc-aq-aFR"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bWr-IM-Qss" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051" y="-42"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3WY-q0-wu3">
+            <objects>
+                <navigationController id="P6S-2z-eyF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xyj-yJ-WGE">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NY9-I4-92D" kind="relationship" relationship="rootViewController" id="MEb-8n-pAH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJX-he-0DM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1371" y="-42"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Buceador1.png" width="150" height="46"/>
+        <image name="Cofre1.png" width="152" height="125"/>
+        <image name="FondoMar.jpeg" width="960" height="726"/>
+        <image name="Pez1.png" width="70" height="50"/>
+        <image name="Telefono1.png" width="70" height="71"/>
+        <image name="Unicornio1.png" width="200" height="178"/>
+        <image name="imagenIpad.jpg" width="1600" height="1127"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
